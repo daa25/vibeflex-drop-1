@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title> Laced Up by VibeFlex Sports</title>
+  <meta name="description" content="This ain't a fashion statement — it's a mindset." />
+  <style>
+    :root{
+      --bg:#0b0f14; --card:#111824; --text:#eef2ff; --muted:#b7c0d8;
+      --line:rgba(255,255,255,.10); --accent:#3b82f6; --accent2:#22c55e;
+      --shadow: 0 20px 60px rgba(0,0,0,.55);
+      --radius:18px;
+      --max:1100px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family: ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial; background:radial-gradient(1000px 600px at 20% -10%, rgba(59,130,246,.25), transparent 55%),
+    radial-gradient(900px 500px at 80% 0%, rgba(34,197,94,.18), transparent 60%),
+    var(--bg); color:var(--text);}
+    a{color:inherit}
+    .wrap{max-width:var(--max); margin:0 auto; padding:24px}
+    .top{display:flex; align-items:center; justify-content:space-between; gap:14px; padding:10px 0 0}
+    .brand{display:flex; flex-direction:column; gap:4px}
+    .brand b{letter-spacing:.12em; text-transform:uppercase; font-size:12px; color:var(--muted)}
+    .brand h1{margin:0; font-size:22px; letter-spacing:.02em}
+    .pill{display:inline-flex; align-items:center; gap:8px; padding:9px 12px; border:1px solid var(--line); border-radius:999px; background:rgba(255,255,255,.04)}
+    .hero{margin-top:18px; border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow); background:linear-gradient(180deg, rgba(255,255,255,.05), transparent)}
+    .heroGrid{display:grid; grid-template-columns: 1.2fr .8fr}
+    @media (max-width: 920px){ .heroGrid{grid-template-columns:1fr} }
+    .heroLeft{padding:26px}
+    .heroLeft h2{margin:0 0 10px; font-size:38px; line-height:1.05}
+    .heroLeft p{margin:0 0 18px; color:var(--muted); font-size:16px; line-height:1.55}
+    .ctaRow{display:flex; flex-wrap:wrap; gap:12px; margin-top:12px}
+    .btn{display:inline-flex; align-items:center; justify-content:center; gap:10px; padding:12px 14px; border-radius:14px; border:1px solid var(--line); background:rgba(255,255,255,.04); text-decoration:none; font-weight:700}
+    .btn.primary{background:linear-gradient(135deg, rgba(59,130,246,.95), rgba(34,197,94,.75)); border-color:transparent}
+    .btn small{opacity:.85; font-weight:600}
+    .heroRight{border-left:1px solid var(--line); background:rgba(0,0,0,.25)}
+    @media (max-width: 920px){ .heroRight{border-left:none; border-top:1px solid var(--line)} }
+    .media{width:100%; height:100%; min-height:320px; display:flex; align-items:center; justify-content:center; padding:14px}
+    .media video, .media img{width:100%; height:100%; max-height:520px; object-fit:cover; border-radius:14px; border:1px solid var(--line)}
+    .section{margin-top:22px}
+    .grid{display:grid; grid-template-columns: repeat(3, 1fr); gap:14px}
+    @media (max-width: 980px){ .grid{grid-template-columns:1fr} }
+    .card{border:1px solid var(--line); border-radius:var(--radius); background:rgba(255,255,255,.03); overflow:hidden; box-shadow: 0 10px 30px rgba(0,0,0,.35)}
+    .card .img{aspect-ratio: 4/3; background:rgba(0,0,0,.25); display:flex; align-items:center; justify-content:center; border-bottom:1px solid var(--line)}
+    .card .img span{color:rgba(255,255,255,.55); font-weight:700}
+    .card .body{padding:14px}
+    .card h3{margin:0 0 6px; font-size:18px}
+    .card p{margin:0 0 12px; color:var(--muted); line-height:1.45}
+    .meta{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:12px}
+    .tag{padding:6px 10px; border-radius:999px; border:1px solid var(--line); background:rgba(255,255,255,.03); font-size:12px; color:var(--muted)}
+    .footer{margin:26px 0 10px; padding-top:18px; border-top:1px solid var(--line); color:var(--muted); display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap}
+    .teaser{margin-top:14px; padding:14px; border:1px dashed rgba(255,255,255,.18); border-radius:16px; background:rgba(255,255,255,.03)}
+    .teaser b{color:var(--text)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <div class="brand">
+        <b>Laced Up by VibeFlex Sports</b>
+        <h1> Laced Up by VibeFlex Sports</h1>
+      </div>
+      <div class="pill">⚡ <span>Drop 1 • Live Now</span></div>
+    </div>
+
+    <div class="hero">
+      <div class="heroGrid">
+        <div class="heroLeft">
+          <h2>BUILT DIFFERENT.</h2>
+          <p>This ain't a fashion statement — it's a mindset.</p>
+          <div class="ctaRow">
+            <a class="btn primary" href="#shop">Shop Drop 1</a>
+            <a class="btn" href="#teaser">More Drops Soon <small>→</small></a>
+          </div>
+          <div class="teaser" id="teaser">
+            <b>TEASER:</b> stay tuned — more drops coming soon. New colorways, Tampa packs, and limited runs.
+          </div>
+        </div>
+        <div class="heroRight">
+          <div class="media">            <img src="assets/hero.jpg" alt="Drop 1 promo" />          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="shop">
+      <h2 style="margin:0 0 10px; font-size:18px; letter-spacing:.06em; text-transform:uppercase; color:var(--muted)">Shop Drop 1</h2>
+      <div class="grid">
+
+        <div class="card">
+          <div class="img"><span>Hoodie image → assets/hoodie.jpg</span></div>
+          <div class="body">
+            <h3>Built Different Hoodie</h3>
+            <p>Heavyweight comfort. Clean chest hit. Hoodie season starter.</p>
+            <div class="meta">
+              <span class="tag">Unisex</span><span class="tag">Street + Gym</span><span class="tag">Best Seller</span>
+            </div>
+            <a class="btn primary" href="59bf48-92.myshopify.com" target="_blank" rel="noopener">Buy Hoodie</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="img"><span>Long sleeve image → assets/longsleeve.jpg</span></div>
+          <div class="body">
+            <h3>Earned. Not Given. Long Sleeve</h3>
+            <p>Statement piece. Sleeve hit ready. Clean, aggressive, premium.</p>
+            <div class="meta">
+              <span class="tag">Sleeve Print</span><span class="tag">Athletic Fit</span><span class="tag">Limited</span>
+            </div>
+            <a class="btn primary" href="59bf48-92.myshopify.com" target="_blank" rel="noopener">Buy Long Sleeve</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="img"><span>T-shirt image → assets/tee.jpg</span></div>
+          <div class="body">
+            <h3>Built Different Tee</h3>
+            <p>Everyday wear. Game day energy. Simple, bold, and clean.</p>
+            <div class="meta">
+              <span class="tag">Soft Cotton</span><span class="tag">Gym Ready</span><span class="tag">Daily</span>
+            </div>
+            <a class="btn primary" href="59bf48-92.myshopify.com" target="_blank" rel="noopener">Buy Tee</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>© <span id="y"></span> Laced Up by VibeFlex Sports</div>
+      <div>Questions? DM @VibeFlexSports</div>
+    </div>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
